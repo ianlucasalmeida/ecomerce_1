@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Index Ingressos</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    /* Custom Styles (if any) */
+  </style>
+</head>
+<body class="bg-gray-100">
+  <!-- Header Section -->
+  <header class="bg-white shadow-md">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="#" class="text-2xl font-bold text-gray-800">Index Ingressos</a>
+      <nav class="hidden md:flex space-x-6">
+        <a href="#" class="text-gray-600 hover:text-gray-800">Home</a>
+        <a href="#" class="text-gray-600 hover:text-gray-800">Produtos</a>
+        <a href="#" class="text-gray-600 hover:text-gray-800">Sobre Nós</a>
+        <a href="#" class="text-gray-600 hover:text-gray-800">Contato</a>
+      </nav>
+      <div class="md:hidden">
+        <button id="menu-btn" class="text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden">
+      <a href="#" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-200">Home</a>
+      <a href="#" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-200">Produtos</a>
+      <a href="#" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-200">Sobre Nós</a>
+      <a href="#" class="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-200">Contato</a>
+    </div>
+  </header>
+
+  <!-- Banner Section -->
+  <section class="bg-gray-800 text-white">
+    <div class="container mx-auto px-6 py-12">
+      <h1 class="text-3xl md:text-5xl font-bold">Bem-vindos a nossa casa de ingressos!</h1>
+      <p class="mt-4 text-lg md:text-xl">Você pode até perder seu pé, ou correr de uma roda punk, mas o show garantimos ser único!</p>
+      <a href="#" class="mt-6 inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Compre agora!</a>
+    </div>
+  </section>
+
+  <!-- Featured Products Section -->
+  <section class="py-12">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center">Produtos em Destaque</h2>
+      <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <!-- Product 1 -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <img src="https://ghost-official.com/wp-content/uploads/2024/10/Ghost_Tour2025_All_Dates_16x9_WEBSITE.jpg" alt="Product 1" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold">Ghost - World Tour 2025</h3>
+            <p class="mt-4 text-gray-600">Descrição breve do produto.</p>
+            <span class="block mt-4 text-gray-800 font-bold">$229.99</span>
+            <a href="#" class="mt-6 inline-block text-indigo-600 hover:text-indigo-800">Comprar</a>
+          </div>
+        </div>
+        <!-- Product 2 -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <img src="https://scontent.frec3-1.fna.fbcdn.net/v/t1.18169-9/13620892_10157156452565464_6830379946304204742_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=0327a3&_nc_eui2=AeFP3CFhbydPIsudqi6sabVJ3uJ3a_cctdLe4ndr9xy10hhNIzfMpY4DqH5DhygQReXcAQC111IRDiwLkgbT2DHc&_nc_ohc=hFQS5SBAiA0Q7kNvgElUenP&_nc_zt=23&_nc_ht=scontent.frec3-1.fna&oh=00_AYBUF8t-U9yE9J7hEXfW3Ua-Mg7OTTVLyPYjN7XAsUOUHA&oe=674CDF93" alt="Product 2" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold">The Last Shadow Puppets - Tribute Tour</h3>
+            <p class="mt-4 text-gray-600">Descrição breve do produto.</p>
+            <span class="block mt-4 text-gray-800 font-bold">$329.99</span>
+            <a href="#" class="mt-6 inline-block text-indigo-600 hover:text-indigo-800">Comprar</a>
+          </div>
+        </div>
+        <!-- Product 3 -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <img src="https://aliceinchains.com/app/themes/sage/dist/images/footer.jpg" alt="Product 3" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold">Alice In Chains - World Tour</h3>
+            <p class="mt-4 text-gray-600">Descrição breve do produto.</p>
+            <span class="block mt-4 text-gray-800 font-bold">$349.99</span>
+            <a href="#" class="mt-6 inline-block text-indigo-600 hover:text-indigo-800">Comprar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Special Offers Section -->
+  <section class="bg-gray-200 py-12">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center">Ofertas Especiais</h2>
+      <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <!-- Offer 1 -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <img src="https://via.placeholder.com/400" alt="Offer 1" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold">Oferta 1</h3>
+            <p class="mt-4 text-gray-600">Descrição breve da oferta.</p>
+            <span class="block mt-4 text-gray-800 font-bold">$19.99</span>
+            <a href="#" class="mt-6 inline-block text-indigo-600 hover:text-indigo-800">Comprar</a>
+          </div>
+        </div>
+        <!-- Offer 2 -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <img src="https://via.placeholder.com/400" alt="Offer 2" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold">Oferta 2</h3>
+            <p class="mt-4 text-gray-600">Descrição breve da oferta.</p>
+            <span class="block mt-4 text-gray-800 font-bold">$24.99</span>
+            <a href="#" class="mt-6 inline-block text-indigo-600 hover:text-indigo-800">Comprar</a>
+          </div>
+        </div>
+        <!-- Offer 3 -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <img src="https://via.placeholder.com/400" alt="Offer 3" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold">Oferta 3</h3>
+            <p class="mt-4 text-gray-600">Descrição breve da oferta.</p>
+            <span class="block mt-4 text-gray-800 font-bold">$29.99</span>
+            <a href="#" class="mt-6 inline-block text-indigo-600 hover:text-indigo-800">Comprar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="py-12">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center">Testemunhos</h2>
+      <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <!-- Testimonial 1 -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden p-6">
+          <p class="text-gray-600">"Produto incrível! Super recomendo. Qualidade excelente e entrega rápida."</p>
+          <div class="mt-4">
+            <p class="text-gray-800 font-bold">Cliente 1</p>
+            <p class="text-gray-600 text-sm">Cidade, Estado</p>
+          </div>
+        </div>
+        <!-- Testimonial 2 -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden p-6">
+          <p class="text-gray-600">"Ótima experiência de compra. Atendimento ao cliente foi excepcional."</p>
+          <div class="mt-4">
+            <p class="text-gray-800 font-bold">Cliente 2</p>
+            <p class="text-gray-600 text-sm">Cidade, Estado</p>
+          </div>
+        </div>
+        <!-- Testimonial 3 -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden p-6">
+          <p class="text-gray-600">"Variedade incrível de produtos a preços ótimos. Voltarei a comprar com certeza."</p>
+          <div class="mt-4">
+            <p class="text-gray-800 font-bold">Cliente 3</p>
+            <p class="text-gray-600 text-sm">Cidade, Estado</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="bg-gray-800 text-white py-6">
+    <div class="container mx-auto px-6 text-center">
+      <p>&copy; 2024 Startup Ecommerce. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('menu-btn').addEventListener('click', () => {
+      const mobileMenu = document.getElementById('mobile-menu');
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
